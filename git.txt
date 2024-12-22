@@ -1,0 +1,79 @@
+
+dell@DESKTOP-NPM3MT2 MINGW64 ~
+$ git init "file"
+Initialized empty Git repository in C:/Users/dell/file/.git/
+
+dell@DESKTOP-NPM3MT2 MINGW64 ~
+$ cd file
+
+dell@DESKTOP-NPM3MT2 MINGW64 ~/file (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+dell@DESKTOP-NPM3MT2 MINGW64 ~/file (master)
+$ touch index.html
+
+dell@DESKTOP-NPM3MT2 MINGW64 ~/file (master)
+$ touch app.js
+
+dell@DESKTOP-NPM3MT2 MINGW64 ~/file (master)
+$ touch style.css
+
+dell@DESKTOP-NPM3MT2 MINGW64 ~/file (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        app.js
+        index.html
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to
+track)
+
+dell@DESKTOP-NPM3MT2 MINGW64 ~/file (master)
+$ git add app.js index.html style.css
+
+dell@DESKTOP-NPM3MT2 MINGW64 ~/file (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   app.js
+        new file:   index.html
+        new file:   style.css
+
+
+dell@DESKTOP-NPM3MT2 MINGW64 ~/file (master)
+$ git commit -m"welcome"
+[master (root-commit) 7b8127b] welcome
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 app.js
+ create mode 100644 index.html
+ create mode 100644 style.css
+
+dell@DESKTOP-NPM3MT2 MINGW64 ~/file (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+dell@DESKTOP-NPM3MT2 MINGW64 ~/file (master)
+$ git log
+commit 7b8127bd936aac5d620a0928cf9dbbf1ad6ab404 (HEAD -> master)
+Author: atef <atefkassab22@gmail.com>
+Date:   Sat Dec 21 14:45:45 2024 +0200
+
+    welcome
+
+dell@DESKTOP-NPM3MT2 MINGW64 ~/file (master)
+$
